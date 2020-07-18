@@ -1,5 +1,5 @@
 meta:
-  title: ""
+  title: "Interact AgTech Circle"
   description: ""
   facebook_image: ""  # /img/facebook.png
   twitter_image: ""  # /img/twitter.png
@@ -21,6 +21,8 @@ team:
   profile: /img/team/harry.jpg
 - name: Jenna Fahle
   profile: /img/team/jenna.jpeg
+- name: Joshua Miller
+  profile: /img/team/joshua.jpeg
 - name: Mackenzie Burnett
   profile: /img/team/mackenzie.jpeg
 - name: Maya Caddle
