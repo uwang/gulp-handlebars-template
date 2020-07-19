@@ -10,6 +10,13 @@ $content-width: 72rem;
 section {
   display: flex;
   margin: 0 auto 6rem;
+  max-width: 144rem;
+}
+
+@media screen and (max-width: 136rem) {
+  section {
+    max-width: 132rem;
+  }
 }
 
 @media screen and (max-width: 124rem) {
@@ -48,13 +55,20 @@ section {
   }
 }
 
-@media screen and (max-width: 52rem) {
+@media screen and (max-width: 58rem) {
   section {
-    max-width: 48rem;
+    max-width: 54rem;
+    margin: 0 auto 3rem;
 
     &.two-up {
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 52rem) {
+  section {
+    max-width: 48rem;
   }
 }
 

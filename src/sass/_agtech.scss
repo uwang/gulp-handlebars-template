@@ -9,8 +9,10 @@
   }
 
   .text-content {
-    padding: 3rem 0;
-
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     p {
       margin-bottom: 1.5rem;
@@ -83,13 +85,12 @@ header {
 
 .team-list {
   margin: 0 -3rem;
-  padding: 3rem 0;
+  padding: 3rem 0 0;
   position: relative;
   z-index: 2;
 
   .team-member {
     display: flex;
-    margin-bottom: 6rem;
     // min-height: 18rem;
 
     h3 {
@@ -104,7 +105,7 @@ header {
     }
 
     .text {
-      padding: 0 3rem;
+      padding: 0 3rem 6rem;
     }
 
     &:nth-child(odd) {
@@ -139,8 +140,9 @@ header {
   }
 }
 
-footer {
+.footer {
   text-align: center;
+
   .content-block {
     padding-bottom: 3rem;
   }
@@ -148,10 +150,6 @@ footer {
 
 @media screen and (max-width: 76rem) {
   .art-block {
-    img.horizontal {
-      left: 0;
-    }
-
     &.green-strip {
       width: 12rem;
     }
@@ -160,13 +158,17 @@ footer {
 
 @media screen and (max-width: 64rem) {
   .art-block {
+    img.horizontal {
+      left: 0;
+    }
+
     &.green-strip {
       width: 6rem;
     }
   }
 }
 
-@media screen and (max-width: 52rem) {
+@media screen and (max-width: 58rem) {
   header {
     min-height: 0;
 
@@ -188,12 +190,31 @@ footer {
 
   .art-block {
     display: block;
+    overflow: hidden;
 
     img {
-      display: none;
+      &.horizontal {
+        right: 18rem;
+        transform: translateX(100%);
+        top: 0;
+        bottom: auto;
+        left: auto;
+        height: 12rem;
+      }
+
+      &.vertical {
+        left: 6rem;
+        width:12rem;
+      }
     }
 
-    &.blue, &.hero {
+    &.blue {
+      height: 18rem;
+      width: 100%;
+      min-height: 0;
+    }
+
+    &.hero {
       height: 12rem;
       width: 100%;
       min-height: 0;
@@ -215,7 +236,7 @@ footer {
       margin-left: -12rem;
 
       .text {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem 3rem;
       }
 
       &:nth-child(even), &:nth-child(odd) {
