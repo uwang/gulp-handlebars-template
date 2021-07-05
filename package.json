@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "npx gulp serve"
+  },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.7.4",

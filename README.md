@@ -20,7 +20,7 @@ _Other Versions: [ES6](https://github.com/minimill/project-template/tree/es6), [
 All with one command from the terminal:
 
 ```bash
-gulp serve
+npm serve
 ```
 
 ## Setup
